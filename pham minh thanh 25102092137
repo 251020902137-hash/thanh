@@ -1,0 +1,227 @@
+{
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": [
+        "hall = 11.25\n",
+        "kit = 18.0\n",
+        "liv = 20.0\n",
+        "bed = 10.75\n",
+        "bath = 9.50\n",
+        "areas = [hall, kit, liv, bed, bath]\n",
+        "print(areas)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4bJR6CvRKJZd",
+        "outputId": "272ca5a6-54ed-4d96-916b-14cf1417f336"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[11.25, 18.0, 20.0, 10.75, 9.5]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "hall = 11.25\n",
+        "kit = 18.0\n",
+        "liv = 20.0\n",
+        "bed = 10.75\n",
+        "bath = 9.50\n",
+        "areas = [hall, kit, \"living room\", liv, bed, \"bathroom\", bath]\n",
+        "print(areas)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UcFaCidcKpct",
+        "outputId": "c704127d-0cf3-4d3c-8f36-e657a0db0f9f"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[11.25, 18.0, 'living room', 20.0, 10.75, 'bathroom', 9.5]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "hall = 11.25\n",
+        "kit = 18.0\n",
+        "liv = 20.0\n",
+        "bed = 10.75\n",
+        "bath = 9.50\n",
+        "house = [[\"hallway\", hall],\n",
+        "         [\"kitchen\", kit],\n",
+        "         [\"living room\", liv]]\n",
+        "print(house)\n",
+        "print(type(house))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3xmYfpUXK6L1",
+        "outputId": "52f82d74-05c0-4e0f-bc4f-80a92a0fb0b9"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[['hallway', 11.25], ['kitchen', 18.0], ['living room', 20.0]]\n",
+            "<class 'list'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "areas = [\"hallway\", 11.25, \"kitchen\", 18.0, \"living room\", 20.0, \"bedroom\", 10.75, \"bathroom\", 9.50]\n",
+        "print(areas[1])\n",
+        "print(areas[-1])\n",
+        "print(areas[5])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8Qk1wtMGLIcF",
+        "outputId": "6e129566-e331-4b8c-caf0-4c5fbac99ed9"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "11.25\n",
+            "9.5\n",
+            "20.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "areas = [\"hallway\", 11.25, \"kitchen\", 18.0, \"living room\", 20.0, \"bedroom\", 10.75, \"bathroom\", 9.50]\n",
+        "downstairs = areas[0:6]\n",
+        "upstairs = areas[6:-1]\n",
+        "print(downstairs)\n",
+        "print(upstairs)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QqOdZa0zLyVt",
+        "outputId": "52a397f4-caa7-4171-9ab4-cbd4a8fe0cd9"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['hallway', 11.25, 'kitchen', 18.0, 'living room', 20.0]\n",
+            "['bedroom', 10.75, 'bathroom']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "areas = [\"hallway\", 11.25, \"kitchen\", 18.0, \"living room\", 20.0, \"bedroom\", 10.75, \"bathroom\", 9.50]\n",
+        "downstairs = areas[:6]\n",
+        "print(downstairs)\n",
+        "print(upstairs)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vf3SbX70MRkn",
+        "outputId": "4ea6204c-f2e4-4f76-ce60-e92fd00d7ca6"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['hallway', 11.25, 'kitchen', 18.0, 'living room', 20.0]\n",
+            "['bedroom', 10.75, 'bathroom']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "4v1qEzfEMffE"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "areas = [\"hallway\", 11.25, \"kitchen\", 18.0, \"living room\", 20.0, \"bedroom\", 10.75, \"bathroom\", 9.50]\n",
+        "downstairs = areas[:6]\n",
+        "upstairs = areas[6:]\n",
+        "print(downstairs)\n",
+        "print(upstairs)\n"
+      ],
+      "metadata": {
+        "id": "RLQ1V8JOUYSt"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = [[\"a\", \"b\", \"c\"],\n",
+        "     [\"d\", \"e\", \"f\"],\n",
+        "     [\"g\", \"h\", \"i\"]]\n",
+        "x[2][0]\n",
+        "x[2][:2]"
+      ],
+      "metadata": {
+        "id": "u2JgL6FNUqrc"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Chào mừng bạn đến với Colab",
+      "provenance": []
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
